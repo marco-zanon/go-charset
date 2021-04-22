@@ -21,7 +21,9 @@ func RegisterDataFile(name string, open func() (io.ReadCloser, error)) {
 // CharsetDir gives the location of the default data file directory.
 // This directory will be used for files with names that have not
 // been registered with RegisterDataFile.
-var CharsetDir = "/usr/local/lib/go-charset/datafiles"
+//var CharsetDir = "/usr/local/lib/go-charset/datafiles"
+var CharsetDir = "C:/Users/marco/go/src/github.com/marco-zanon/go-charset/datafiles"
+
 
 func readFile(name string) (data []byte, err error) {
 	var r io.ReadCloser
